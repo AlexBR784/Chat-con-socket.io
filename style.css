@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;700&display=swap');
+*{
+  outline: none;
+}
+
+body > #name-container{
+  display: flex;
+  height: 50vh;
+  justify-content: center;
+}
+
+#name-container{
+  display: flex;
+  flex-direction: column;
+  margin-left: 35%;
+  margin-right: 35%;
+  margin-top: 5px;
+  max-width: 20%;
+}
+h1{
+  text-align: center;
+  font-family: Montserrat;
+}
+#login-container{
+  display: flex;
+  flex-direction: column;
+}
+#name-input{
+  text-align: center;
+  width: 100%;
+  height: 50px;
+  border-radius: 100px;
+  font-family: Montserrat;
+  font-size: 20px;
+  color: black;
+  font-weight: bolder;
+}
+#send-name{
+  width: 80px;
+  margin-top: 10px;
+  align-self: center;
+  text-decoration: none;
+  text-align: center;
+  font-family: Montserrat;
+  font-weight: bolder;
+}
+
+.chat-box{
+  border: 2px solid black;
+  padding: 0;
+  margin: 0;
+  margin-left: 35%;
+  margin-right: 35%;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 50vh;
+}
+[name="button"], #send-name{
+  border: 2px solid #2C50D7;
+  border-radius: 4px;
+  color: white;
+  background-color: #546FD3;
+  cursor: pointer;
+}
+#message-input{
+  border: 2px solid black;
+  width: 85%;
+  border-radius: 10px;
+  transition: 0.5s;
+  transition-property: border;
+}
+#message-input:hover{
+  border: 2px solid #546FD3;
+}
+
+#message-container div{
+  font-family: Montserrat;
+  font-size: 15px;
+  position: relative;
+  padding: 5px;
+  margin: 10px;
+  color: white;
+  font-weight: bold;
+}
+#message-container div:nth-child(2n+1){
+  background-color: #4687BD;
+}
+#message-container div:nth-child(2n){
+  background-color: #828E98;
+}
+#send-container{
+
+  padding: 5px;
+  width: 98%;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+}
